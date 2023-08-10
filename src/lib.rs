@@ -1,5 +1,8 @@
 // Build a sieve of Eratosthenes.
 pub fn sieve_of_eratosthenes(max: usize) -> Vec<bool> {
+    if max == 0 {return vec![false]};
+    if max == 1 {return vec![false, false]};
+
     let mut values = vec![true; max + 1];
     values[0] = false;
     values[1] = false;
