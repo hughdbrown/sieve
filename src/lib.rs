@@ -162,7 +162,7 @@ mod tests {
     }
 
     #[test]
-    fn sieve_10 () {
+    fn sieve_20 () {
         let result = sieve_of_eratosthenes(20);
         println!("{:?}", result);
         assert_eq!(21, result.len());
